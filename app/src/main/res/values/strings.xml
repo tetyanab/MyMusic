@@ -1,0 +1,39 @@
+<resources>
+    <!--Names of various screens -->
+    <string name="app_name">My Music</string>
+    <string name="view_songs">Songs</string>
+    <string name="view_now_playing">Now playing</string>
+    <string name="view_similar">Similar artists</string>
+
+    <!--Intro text on various screens -->
+    <string name="intro_main_screen">This view shows the local music collection of the user (a database would need to be created based on the local music collection). It would be useful to add an icon in the app bar which would toggle between the album view and the artist view. To read a list of artists/albums to display in this view, it would be necessary to look up all the audio files on a device and display them in the structure below. When any card is tapped, the user lands in the Songs view showing all songs in that album or by that artist.</string>
+    <string name="intro_songs_list">This view shows all songs in an album or by an artist which the user selected on the main app screen. It would be necessary to populate the values for the artist\'s name, album name and tracks in the album dynamically depending on which album was selected in the main app view. In addition to \"Play all\" button below, it would be useful to also show individual Play buttons for each track (landing the user on \"Now playing\" page). A MediaPlayer class would need to be implemented for controlling playback. The app bar should contain the Up arrow to return to the previous view.</string>
+    <string name="intro_now_playing">This view shows a song/album which is playing. It would be necessary to integrate a library with an audio player (such as OpenPlayer https://android-arsenal.com/details/1/1616 or JcPlayer https://android-arsenal.com/details/1/4638) for playing the music along with playback controls such as Play/Pause/Stop/Next track/Previous track as well as the time counter for when a song is playing. The app bar should contain the Up arrow to return to the previous view.</string>
+    <string name="intro_similar_albums">This view would show artists or albums which are similar to the one the user has locally. One would have to use a music library or a service which could perform such a lookup and display recommendations for streaming. Or possibly an API could be developed with a service such as Jango Radio which provides music recommendations and playlists based on a selected album/artist. The app bar should contain the Up arrow to return to the previous view.</string>
+
+    <!--Artist names in the local music library -->
+    <string name="artist1">Bach</string>
+    <string name="artist2">Beethoven</string>
+    <string name="artist3">Mozart</string>
+    <string name="artist4">Schubert</string>
+
+    <!--Album names in the local music library -->
+    <string name="album1">Brandenburg Concertos</string>
+    <string name="album2">The Complete Piano Sonatas</string>
+    <string name="album3">The Great Piano Concertos</string>
+    <string name="album4">The Symphonies</string>
+
+    <!--Track names in a selected album -->
+    <string name="track1">Track 1: Violin Concerto in A minor, BWV 1041</string>
+    <string name="track2">Track 2: Violin Concerto in E major, BWV 1042</string>
+    <string name="track3">Track 3: Concerto for Two Violins, BWV 1043</string>
+    <string name="track4">Track 4: Triple Concerto, BWV 1044</string>
+    <string name="track5">Track 5: Sinfonia for violin and orchestra, BWV 1045</string>
+    <string name="track6">Track 6: Brandenburg Concertos, BWV 1046–1051</string>
+    <string name="track7">Track 7: Keyboard concertos, BWV 1052–1065</string>
+
+    <!--Buttons and playback controls -->
+    <string name="play_all">Play all</string>
+    <string name="discover_similar">Discover similar</string>
+
+</resources>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.mymusic.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pageBackground"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card1_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardElevation="2dp">
+
+            <TextView
+                android:id="@+id/intro1_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:text="@string/intro_main_screen"
+                android:textSize="12sp" />
+        </android.support.v7.widget.CardView>
+
+
+        <LinearLayout
+            android:id="@+id/card_row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card1_intro"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_artist1"
+                style="@style/styleCardSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                card_view:cardBackgroundColor="@android:color/white"
+                card_view:cardElevation="2dp">
+
+                <LinearLayout
+                    android:id="@+id/artist1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/styleImageArtist"
+                        android:src="@drawable/bach" />
+
+                    <TextView
+                        style="@style/styleTextArtist"
+                        android:text="@string/artist1" />
+
+                    <TextView
+                        style="@style/styleTextAlbum"
+                        android:text="@string/album1" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_artist2"
+                style="@style/styleCardSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                card_view:cardBackgroundColor="@android:color/white"
+                card_view:cardElevation="2dp">
+
+                <LinearLayout
+                    android:id="@+id/artist2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/styleImageArtist"
+                        android:src="@drawable/beethoven" />
+
+                    <TextView
+                        style="@style/styleTextArtist"
+                        android:text="@string/artist2" />
+
+                    <TextView
+                        style="@style/styleTextAlbum"
+                        android:text="@string/album2" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/card_row2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_row1"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_artist3"
+                style="@style/styleCardSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_artist3"
+                android:layout_weight="1"
+                card_view:cardBackgroundColor="@android:color/white"
+                card_view:cardElevation="2dp">
+
+                <LinearLayout
+                    android:id="@+id/artist3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/styleImageArtist"
+                        android:src="@drawable/mozart" />
+
+                    <TextView
+                        style="@style/styleTextArtist"
+                        android:text="@string/artist3" />
+
+                    <TextView
+                        style="@style/styleTextAlbum"
+                        android:text="@string/album3" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_artist4"
+                style="@style/styleCardSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_artist4"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/card_artist3"
+                android:layout_weight="1"
+                card_view:cardBackgroundColor="@android:color/white"
+                card_view:cardElevation="2dp">
+
+                <LinearLayout
+                    android:id="@+id/artist4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/styleImageArtist"
+                        android:src="@drawable/schubert" />
+
+                    <TextView
+                        style="@style/styleTextArtist"
+                        android:text="@string/artist4" />
+
+                    <TextView
+                        style="@style/styleTextAlbum"
+                        android:text="@string/album4" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
